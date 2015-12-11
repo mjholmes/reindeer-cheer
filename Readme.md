@@ -6,7 +6,7 @@
 
 
 ## Laser cut head
-I'm using the excellent ["Mounted Deer / Reindeer Head"](http://www.thingiverse.com/thing:34513) by [phenoptix](http://www.thingiverse.com/phenoptix) which is licensed under the Creative Commons - Attribution - Share Alike license. I've modified the design to add a couple of notches to allow cables to be threaded through form front to back and add some holes to the nose. The design files contain two noses, one with a 5mm hole for threading cables etc and another for a standard 10mm LED; my editing in AutoCAD has bloated the file size a bit.
+I'm using the excellent ["Mounted Deer / Reindeer Head"](http://www.thingiverse.com/thing:34513) by [phenoptix](http://www.thingiverse.com/phenoptix) which is licensed under the Creative Commons - Attribution - Share Alike license. I've modified the design to add a couple of notches to allow cables to be threaded through from front to back and add some holes to the nose. The design files contain two noses, one with a 5mm hole for threading cables etc and another for a standard 10mm LED; my editing in AutoCAD has bloated the file size a bit.
 
 The design was cut from 3mm (ish) birch ply on a [HPC Laserscript 3060](http://hpclaser.co.uk/index.php?main_page=product_info&products_id=39) using a power level of 97% and a speed of 12 which seems about right for the material. Once cut a little bit of gentle sanding was required to make things fit nicely.
 
@@ -22,7 +22,7 @@ Once the Photon was [connected to WiFi](https://docs.particle.io/guide/getting-s
 > Note that within the Particle Web IDE there are two ThingSpeak libraries which are, unhelpfully, both call THINGSPEAK.
 > I used the official [Mathsworks library](mathworks/thingspeak-particle) which adds "#include "ThingSpeak/ThingSpeak.h" to the top of your app.
 
-I've modified the example code from both the ThingSpeak and Neopixel libraries so that the colours fade instead of switching when CheerLights updates. The full listing can be found in [/firmware/reindeer-cheer.ino].
+I've modified the example code from both the ThingSpeak and Neopixel libraries so that the colours fade instead of switching when CheerLights updates. The full listing can be found in [/firmware/reindeer-cheer.ino](/firmware/reindeer-cheer.ino).
 
 To create and compile my code in the Particle Web IDE:
 
@@ -42,3 +42,8 @@ At this point your Photon should flash magenta and then your Neopixel should spr
 
 ![Cable routing within the Reindeer head](/_content/reindeer_inside.JPG)
 
+## Useful references
+
+* Adafruit Neopixel uber guide - https://learn.adafruit.com/adafruit-neopixel-uberguide/overview
+* Particle Web IDE beginners guide - https://docs.particle.io/guide/getting-started/build/photon/
+* CheerLights build guide - http://cheerlights.com/build/
