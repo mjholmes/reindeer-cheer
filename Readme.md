@@ -15,7 +15,7 @@ The CheerLights "necklace" was created in [Inkscape](https://inkscape.org), modi
 ## CheerLights integration
 I'm using a WS2812B based [Neopixel](https://www.adafruit.com/products/1612) for the nose, you can pick these up from most Adafruit resellers and various other places on the web. Controlling the Neopixel is a [Particle Photon](https://www.particle.io/prototype) which is tucked into the "neck" of the Reindeer head, the Photon connects to the [CheerLights channel](https://thingspeak.com/channels/1417) on [ThingSpeak](https://thingspeak.com/) using WiFi and updates the Neopixel colour according to the latest CheerLights value. The Photon is connected to the Neopixel according to the diagram below, I used 3-core ribbon cable taken from a wider piece but any cable will do.
 
-![Fritzing diagram of Photon Neopixel connections](/_content/photon-connections.png)
+![Fritzing diagram of Photon Neopixel connections](/_content/photon_connections.png)
 
 Once the Photon was [connected to WiFi](https://docs.particle.io/guide/getting-started/start/photon/#step-1-power-on-your-device) I used the [Particle Web IDE](https://build.particle.io/login) to write some code. There are lots of good examples on the web of integrating with CheerLights but the ThingSpeak library within the Particle Web IDE comes with a CheerLights example right out of the box, thanks!
 
@@ -32,18 +32,13 @@ To create and compile my code in the Particle Web IDE:
 4. Click on the Libraries section and search for Neopixel
 5. Click on the Neopixel library and choose "include in app"
 6. Choose the app you created above and then hit "add to this app"
-7. Repeat steps 4 to 6 for the Thingspeak library
+7. Repeat steps 4 to 6 for the ThingSpeak library
 8. Copy and paste the code from [/firmware/reindeer-cheer.ino] into your app making sure you delete anything that already exists.
 9. Save your changes
 10. In the Devices section choose the Photon you connected earlier
 11. Choose flash.
 
-At this point your Photon should flash magenta and then your Neopixel should spring into life.
+At this point your Photon should flash magenta and then your Neopixel should spring into life. Assuming all went well you are now safe to mount your Photon into the compartment formed at the back of the Reindeer head. Some foam sticky pads work very well for this.
 
-
-## Construction
-![Cable routing within the Redineer head](/_content/reindeer_inside.JPG)
-
-
-The whole system is powered of a spare Apple USB charger.
+![Cable routing within the Reindeer head](/_content/reindeer_inside.JPG)
 
